@@ -1,0 +1,165 @@
+@font-face {
+    font-family: "Trebuchet MS", sans-serif;
+    src: url("fonts/trebuchetms.ttf");
+    font-style: normal;
+    font-weight: normal;
+}
+
+body {
+    font-family: "Trebuchet MS";
+    font-style: normal;
+    background-image: url("/img/Pattern.png");
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    
+}
+
+.title {
+    font-family: "Exo 2", sans-serif;
+    color: #fff;
+    margin-top: 90px;
+    text-align: center;
+    font-weight: 100;
+    font-size: 36px;
+    line-height: 44px;
+}
+
+.information_block {
+    position: relative;
+    width: 320px;
+    height: 458px;
+    margin: 0 auto;
+    cursor: pointer;
+    -webkit-border-radius: 12px;
+            border-radius: 12px;
+    background: -webkit-linear-gradient(315deg, transparent 35px, #1698d9 0);
+    background: -o-linear-gradient(315deg, transparent 35px, #1698d9 0);
+    background: linear-gradient(135deg, transparent 35px, #1698d9 0); 
+}
+
+.border-block {
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    bottom: 4px;
+    left: 4px;
+    width: 312px;
+    height: 450px;
+    -webkit-border-radius: 10px;
+            border-radius: 10px;
+    background: #f2f2f2;
+    background: -webkit-linear-gradient(315deg, transparent 34px, #f2f2f2 0);
+    background: -o-linear-gradient(315deg, transparent 34px, #f2f2f2 0);
+    background: linear-gradient(135deg, transparent 34px, #f2f2f2 0); }
+
+.cat_card {
+    justify-content: center;
+    margin-top: 24px;
+}
+
+.text_block {
+    margin-left: 48px;
+    font-size: 16px;
+    color: #000000;
+}
+
+.text_1 {
+    font-weight: 400;
+    line-height: 19px;
+    color: #666666;
+    margin-bottom: 0;
+}
+
+.text_2 {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 56px;
+    margin: 0;
+}
+
+.text_3 {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 28px;
+    margin: 0;
+}
+
+.text_4 {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: #666666;
+}
+
+.cat_photo {
+    width: 262px;
+    height: 271px;
+    overflow: hidden;
+    border-radius: 10px;
+    max-width: 90%;
+}
+
+.cat_photo.last {
+    height: 265px;
+    margin-top: -10px;
+}
+
+div>img {
+    display: block;
+    margin-left: -25px;
+    margin-top: 10px;
+}
+
+
+
+.elips {
+    height: 80px;
+    position: relative;
+    left: 220px;
+    bottom: 90px;
+    width: 80px;
+    background-color: rgba(22, 152, 217, 1);
+    border-radius: 50%;
+}
+
+.weight_text {
+    text-align: center;
+    font-size: 21px;
+    line-height: 1em;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    display: inline-block;
+    width: 100%;
+    margin: 0;
+    margin-top: -.625em;
+    color: #fff;
+}
+
+span {
+    font-size: 42px;
+    font-weight: 400;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+
+.bottom_card_tex {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15px;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.card_link {
+    text-decoration: none;
+    color: #1698d9;
+    border-bottom: 1px dashed #1698d9;
+}
