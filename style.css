@@ -5,6 +5,20 @@
     font-weight: normal;
 }
 
+
+/* @media (max-width: 1200px) {
+    .information_block {
+      width: 300px;
+      height: 460px; }
+    .card_border {
+      width: 292px;
+      height: 452px; }
+    .text_block {
+      font-size: 14px; }
+    .cat_photo {
+      max-width: 90%; }
+    } */
+
 body {
     font-family: "Trebuchet MS";
     font-style: normal;
@@ -15,6 +29,7 @@ body {
 
 .main {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 50px;
     
@@ -43,7 +58,74 @@ body {
     background: linear-gradient(135deg, transparent 35px, #1698d9 0); 
 }
 
-.border-block {
+.information_block:hover {
+    background: -webkit-linear-gradient(315deg, transparent 35px, #20a6e8 0);
+    background: -o-linear-gradient(315deg, transparent 35px, #20a6e8 0);
+    background: linear-gradient(135deg, transparent 35px, #20a6e8 0);
+}
+
+.information_block:hover .elips {
+      background-color: #20a6e8; 
+}
+
+.disabled, .disabled:hover {
+    background: -webkit-linear-gradient(315deg, transparent 35px, rgba(179, 179, 179, 1) 0);
+    background: -o-linear-gradient(315deg, transparent 35px, rgba(179, 179, 179, 1) 0);
+    background: linear-gradient(135deg, transparent 35px, rgba(179, 179, 179, 1) 0); 
+}
+
+.disabled .elips {
+    background-color: #B3B3B3; 
+}
+
+.disabled:hover .elips {
+    background-color: #B3B3B3; 
+}
+
+.disabled:hover .elips:hover {
+      background-color: #B3B3B3; 
+}
+
+.active {
+    background: -webkit-linear-gradient(315deg, transparent 35px, #e62e7a 0);
+    background: -o-linear-gradient(315deg, transparent 35px, #e62e7a 0);
+    background: linear-gradient(135deg, transparent 35px, #e62e7a 0);
+    -webkit-border-radius: 12px;
+            border-radius: 12px;
+    cursor: pointer; 
+}
+
+.active:hover {
+      background: -webkit-linear-gradient(315deg, transparent 35px, #e94588 0);
+      background: -o-linear-gradient(315deg, transparent 35px, #e94588 0);
+      background: linear-gradient(135deg, transparent 35px, #e94588 0); 
+}
+
+.active:hover .elips {
+    background-color: #e94588;
+}
+
+.active .elips {
+    background-color: #e62e7a;
+} 
+
+.disabled::before {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    content: '';
+    opacity: 0.6;
+    -webkit-border-radius: 10px;
+            border-radius: 10px;
+    background-color: white;
+    background: -webkit-linear-gradient(315deg, transparent 34px, white 0);
+    background: -o-linear-gradient(315deg, transparent 34px, white 0);
+    background: linear-gradient(135deg, transparent 34px, white 0); }
+
+
+
+.card_border {
     position: absolute;
     top: 4px;
     right: 4px;
@@ -56,7 +138,8 @@ body {
     background: #f2f2f2;
     background: -webkit-linear-gradient(315deg, transparent 34px, #f2f2f2 0);
     background: -o-linear-gradient(315deg, transparent 34px, #f2f2f2 0);
-    background: linear-gradient(135deg, transparent 34px, #f2f2f2 0); }
+    background: linear-gradient(135deg, transparent 34px, #f2f2f2 0); 
+}
 
 .cat_card {
     justify-content: center;
@@ -116,8 +199,6 @@ div>img {
     margin-top: 10px;
 }
 
-
-
 .elips {
     height: 80px;
     position: relative;
@@ -127,6 +208,7 @@ div>img {
     background-color: rgba(22, 152, 217, 1);
     border-radius: 50%;
 }
+
 
 .weight_text {
     text-align: center;
@@ -150,16 +232,32 @@ span {
     text-align: center;
 }
 
-.bottom_card_tex {
+.bottom_card_text {
     font-weight: 400;
     font-size: 13px;
     line-height: 15px;
-    color: #FFFFFF;
     text-align: center;
+    color: #FFFFFF;
+}
+
+.default_text {
+    display: block;
+}
+.selected_text {
+    display: none;
+}
+
+.disabled_text {
+    display: none;
+    color: #ffff66;
 }
 
 .card_link {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15px;
     text-decoration: none;
     color: #1698d9;
     border-bottom: 1px dashed #1698d9;
 }
+
