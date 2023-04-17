@@ -5,20 +5,6 @@
     font-weight: normal;
 }
 
-
-/* @media (max-width: 1200px) {
-    .information_block {
-      width: 300px;
-      height: 460px; }
-    .card_border {
-      width: 292px;
-      height: 452px; }
-    .text_block {
-      font-size: 14px; }
-    .cat_photo {
-      max-width: 90%; }
-    } */
-
 body {
     font-family: "Trebuchet MS";
     font-style: normal;
@@ -32,7 +18,7 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     gap: 50px;
-    
+
 }
 
 .title {
@@ -52,10 +38,10 @@ body {
     margin: 0 auto;
     cursor: pointer;
     -webkit-border-radius: 12px;
-            border-radius: 12px;
+    border-radius: 12px;
     background: -webkit-linear-gradient(315deg, transparent 35px, #1698d9 0);
     background: -o-linear-gradient(315deg, transparent 35px, #1698d9 0);
-    background: linear-gradient(135deg, transparent 35px, #1698d9 0); 
+    background: linear-gradient(135deg, transparent 35px, #1698d9 0);
 }
 
 .information_block:hover {
@@ -65,25 +51,26 @@ body {
 }
 
 .information_block:hover .elips {
-      background-color: #20a6e8; 
+    background-color: #20a6e8;
 }
 
-.disabled, .disabled:hover {
+.disabled,
+.disabled:hover {
     background: -webkit-linear-gradient(315deg, transparent 35px, rgba(179, 179, 179, 1) 0);
     background: -o-linear-gradient(315deg, transparent 35px, rgba(179, 179, 179, 1) 0);
-    background: linear-gradient(135deg, transparent 35px, rgba(179, 179, 179, 1) 0); 
+    background: linear-gradient(135deg, transparent 35px, rgba(179, 179, 179, 1) 0);
 }
 
 .disabled .elips {
-    background-color: #B3B3B3; 
+    background-color: #B3B3B3;
 }
 
 .disabled:hover .elips {
-    background-color: #B3B3B3; 
+    background-color: #B3B3B3;
 }
 
 .disabled:hover .elips:hover {
-      background-color: #B3B3B3; 
+    background-color: #B3B3B3;
 }
 
 .active {
@@ -91,14 +78,14 @@ body {
     background: -o-linear-gradient(315deg, transparent 35px, #e62e7a 0);
     background: linear-gradient(135deg, transparent 35px, #e62e7a 0);
     -webkit-border-radius: 12px;
-            border-radius: 12px;
-    cursor: pointer; 
+    border-radius: 12px;
+    cursor: pointer;
 }
 
 .active:hover {
-      background: -webkit-linear-gradient(315deg, transparent 35px, #e36197 0);
-      background: -o-linear-gradient(315deg, transparent 35px, #e36197 0);
-      background: linear-gradient(135deg, transparent 35px, #e36197 0); 
+    background: -webkit-linear-gradient(315deg, transparent 35px, #e36197 0);
+    background: -o-linear-gradient(315deg, transparent 35px, #e36197 0);
+    background: linear-gradient(135deg, transparent 35px, #e36197 0);
 }
 
 .active:hover .elips {
@@ -107,7 +94,7 @@ body {
 
 .active .elips {
     background-color: #e62e7a;
-} 
+}
 
 .disabled::before {
     position: absolute;
@@ -117,11 +104,12 @@ body {
     content: '';
     opacity: 0.6;
     -webkit-border-radius: 10px;
-            border-radius: 10px;
+    border-radius: 10px;
     background-color: white;
     background: -webkit-linear-gradient(315deg, transparent 34px, white 0);
     background: -o-linear-gradient(315deg, transparent 34px, white 0);
-    background: linear-gradient(135deg, transparent 34px, white 0); }
+    background: linear-gradient(135deg, transparent 34px, white 0);
+}
 
 
 
@@ -134,11 +122,11 @@ body {
     width: 312px;
     height: 450px;
     -webkit-border-radius: 10px;
-            border-radius: 10px;
+    border-radius: 10px;
     background: #f2f2f2;
     background: -webkit-linear-gradient(315deg, transparent 34px, #f2f2f2 0);
     background: -o-linear-gradient(315deg, transparent 34px, #f2f2f2 0);
-    background: linear-gradient(135deg, transparent 34px, #f2f2f2 0); 
+    background: linear-gradient(135deg, transparent 34px, #f2f2f2 0);
 }
 
 .cat_card {
@@ -243,6 +231,7 @@ span {
 .default_text {
     display: block;
 }
+
 .selected_text {
     display: none;
 }
@@ -260,4 +249,3 @@ span {
     color: #1698d9;
     border-bottom: 1px dashed #1698d9;
 }
-
