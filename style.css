@@ -96,9 +96,9 @@ body {
 }
 
 .active:hover {
-      background: -webkit-linear-gradient(315deg, transparent 35px, #e94588 0);
-      background: -o-linear-gradient(315deg, transparent 35px, #e94588 0);
-      background: linear-gradient(135deg, transparent 35px, #e94588 0); 
+      background: -webkit-linear-gradient(315deg, transparent 35px, #e36197 0);
+      background: -o-linear-gradient(315deg, transparent 35px, #e36197 0);
+      background: linear-gradient(135deg, transparent 35px, #e36197 0); 
 }
 
 .active:hover .elips {
