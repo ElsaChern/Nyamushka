@@ -10,7 +10,7 @@ for (let card of cards) {
 
     const isDisabled = function () {
         if (informationBlock.classList.contains('disabled')) {
-            bottomCardText.textContent = disabledText[cardId]
+            bottomCardText.textContent = disabledText[cardId];
             bottomCardText.style.color = '#ffff66';
         }
     }
@@ -22,16 +22,16 @@ for (let card of cards) {
         if (informationBlock.classList.contains('disabled'))
             return;
         else {
-            toggleCard()
+            toggleCard();
         }
     }
 
     const toggleCard = function () {
         informationBlock.classList.toggle('active');
         if (informationBlock.classList.contains('active')) {
-            bottomCardText.textContent = possibleTextOptions[cardId]
+            bottomCardText.textContent = possibleTextOptions[cardId];
         } else {
-            bottomCardText.textContent = 'Не стоит откладывать покупку на потом "Мяу"'
+            bottomCardText.textContent = 'Не стоит откладывать покупку на потом "Мяу"';
         }
     }
 
